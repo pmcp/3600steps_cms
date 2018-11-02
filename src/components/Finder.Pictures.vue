@@ -48,7 +48,6 @@ export default {
       let vm = this;
       if(newValue === '') {
         // If the users is '', then we just want all the pictures of the walk.
-
         vm.$bindAsArray('items', db.ref("data/images").orderByChild('walk')).equalTo(vm.walk);
       } else {
         let vm = this;

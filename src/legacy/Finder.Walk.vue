@@ -5,7 +5,7 @@
                     <b-tab-item label="Users">
 
 
-                                                <div v-for="(item, index) in users" v-bind:key="index+'_users'" v-on:click="getPictures(index)" class="pointer hover">
+            <div v-for="(item, index) in users" v-bind:key="index+'_users'" v-on:click="getPictures(index)" class="pointer hover">
 
                                                    <b-collapse class="card" :open="false">
             <div slot="trigger" slot-scope="props" class="card-header">
