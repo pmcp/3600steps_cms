@@ -59,7 +59,7 @@
             </div>
             <div v-on:click="removeItem(item, 'walks')">
               Delete walk
-            </div>
+            </div>  
           </div>
         </div>
     </b-collapse>
