@@ -18,8 +18,7 @@
           <li
             v-for="(i, index) in images"
             v-bind:key="'slideshow_' + index"
-            v-on:click="openImages(i)"
-          >{{i.image.cdnUrl}}</li>
+          ><a :href="i.image.cdnUrl" target="_blank"><img :src="i.image.uuid | getResized"></a></li>
         </ul>
 
       
@@ -37,6 +36,11 @@ export default {
   data: () => ({
     images: {}
   }),
+  filters: {
+    getResized: function(id) {
+      return "https://ucarecdn.com/" + id + "/-/resize/100x/";
+    }
+  },
   firebase: function() {
     return {
       items: db.ref("admin/slideshow").limitToLast(10)
