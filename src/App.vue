@@ -23,6 +23,9 @@
           <a class="navbar-item">
             <router-link to="/settings">Settings</router-link>
           </a>
+          <a class="navbar-item">
+            <router-link to="/slideshow">Slideshow</router-link>
+          </a>
         </div> 
       </div>
     </nav>
