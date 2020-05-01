@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "buefy": "^0.7.0",
@@ -17,7 +19,8 @@
     "uploadcare-widget": "^3.6.1",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
-    "vuefire": "^1.4.5"
+    "vuefire": "^1.4.5",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.4",
@@ -27,5 +30,6 @@
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.17"
-  }
+  },
+  "snyk": true
 }
